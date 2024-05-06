@@ -5,3 +5,4 @@ from .penrith import *
 from .lithgow import *
 from .moira import *
 from .moyne import *
+from .murrindindi import * 
