@@ -1,4 +1,4 @@
-from sqlalchemy import Column, String, Text, Integer, DateTime, func, UniqueConstraint
+from sqlalchemy import Column, String, Text, Integer, DateTime, func, UniqueConstraint,null
 from .metadata_base import Base
 
 
@@ -11,9 +11,9 @@ class LithgowDowns(Base):
     application_group = Column(String(255),nullable=True,server_default=None)
     category = Column(String(255),nullable=True,server_default=None)
     sub_category = Column(String(100),nullable=True,server_default=None)
-    lodged_date = Column(Integer, nullable=True, server_default=None)
+    lodged_date = Column(Integer, nullable=True,)
     stage = Column(String(100),nullable=True,server_default=None)
-    determined_date = Column(Integer, nullable=True, server_default=None)
+    determined_date = Column(Integer, nullable=True,)
     name_details =Column(Text, nullable=True, server_default=None)
     properties = Column(Text, nullable=True, server_default=None)
     _tid = Column(String(255), nullable=False,server_default=None )
