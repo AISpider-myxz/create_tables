@@ -10,3 +10,6 @@ from .whitehorse import *
 from .ecouncil import *
 from .southgippsland import *
 from .cockburn import *
+from .geelongaustralia import *
+from .monash import *
+from .commercialrealestate import *
