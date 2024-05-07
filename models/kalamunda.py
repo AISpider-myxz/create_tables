@@ -23,6 +23,6 @@ class Kalamunda(Base):
     start_date = Column(String(255), nullable=True, server_default=None)
     end_date = Column(String(255), nullable=True, server_default=None)
 
-    _tid = Column(String(255), nullable=False,server_default=None )
+    _tid = Column(String(255), nullable=False,server_default=None)
     created_at = Column(DateTime, server_default=func.now())
     updated_at = Column(DateTime, server_default=func.now(), onupdate=func.now())
