@@ -16,6 +16,6 @@ class Penrith(Base):
     decision = Column(Text, nullable=True, server_default=None)
     location = Column(Text, nullable=True, server_default=None)
     documents = Column(Text, nullable=True, server_default=None)
-    _tid = Column(String(255), nullable=False,server_default=None )
+    _tid = Column(String(255), nullable=False,server_default=None)
     created_at = Column(DateTime, server_default=func.now())
     updated_at = Column(DateTime, server_default=func.now(), onupdate=func.now())
