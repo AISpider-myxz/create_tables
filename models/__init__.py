@@ -23,3 +23,5 @@ from .realcommercial import *
 from .act import *
 from .launceston import *
 from .hobart import *
+from .strathbogie import *
+from .wentworth import *
