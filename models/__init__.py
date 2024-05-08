@@ -22,3 +22,4 @@ from .domain import *
 from .realcommercial import *
 from .act import *
 from .launceston import *
+from .hobart import *
