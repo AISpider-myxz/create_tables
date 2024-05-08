@@ -13,3 +13,12 @@ from .cockburn import *
 from .geelongaustralia import *
 from .monash import *
 from .commercialrealestate import *
+from .swan import *
+from .casey import *
+from .bendigo import *
+from .vincent import *
+from .ndis import *
+from .domain import *
+from .realcommercial import *
+from .act import *
+from .launceston import *
