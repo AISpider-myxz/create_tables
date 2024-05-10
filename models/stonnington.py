@@ -5,7 +5,7 @@ class Stonnington(Base):
     __tablename__ = 'stonnington'
 
     id = Column(Integer, primary_key=True)
-    app_number = Column(String(128), nullable=True, unique=True)
+    app_number = Column(String(128), nullable=False, unique=True)
     lodged = Column(Integer, nullable=True)
     site_address = Column(Text, nullable=True)
     reason_for_permit = Column(Text, nullable=True)

@@ -40,3 +40,6 @@ from .kingborough import *
 from .tweed import *
 from .NSW import *
 from .busselton import *
+from .lockyer_valley import *
+from .perth import *
+from .moretonbay import *
