@@ -43,3 +43,7 @@ from .busselton import *
 from .lockyer_valley import *
 from .perth import *
 from .moretonbay import *
+from .noosa_council import *
+from .banyule import *
+from .scenic_rim import *
+from .realestate import *
