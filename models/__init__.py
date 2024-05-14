@@ -47,3 +47,4 @@ from .noosa_council import *
 from .banyule import *
 from .scenic_rim import *
 from .realestate import *
+from .plansa import *
