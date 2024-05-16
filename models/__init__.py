@@ -49,3 +49,4 @@ from .scenic_rim import *
 from .realestate import *
 from .plansa import *
 from .mandurah import *
+from .southern_town import *
