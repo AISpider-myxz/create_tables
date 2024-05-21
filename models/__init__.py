@@ -52,3 +52,4 @@ from .mandurah import *
 from .southern_town import *
 from .midcoast import *
 from .hills_shire import *
+from .dubaipulse import *
