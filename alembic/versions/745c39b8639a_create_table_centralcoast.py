@@ -1,8 +1,8 @@
 """create_table_CentralCoast
 
-Revision ID: 427c255b7e4d
+Revision ID: 745c39b8639a
 Revises: 
-Create Date: 2024-05-21 09:38:05.188320
+Create Date: 2024-05-21 17:42:24.663339
 
 """
 from typing import Sequence, Union
@@ -12,7 +12,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = '427c255b7e4d'
+revision: str = '745c39b8639a'
 down_revision: Union[str, None] = None
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
@@ -794,6 +794,31 @@ def upgrade() -> None:
     sa.Column('update_at', sa.DateTime(), server_default=sa.text('now()'), nullable=True),
     sa.PrimaryKeyConstraint('id'),
     sa.UniqueConstraint('application_id')
+    )
+    op.create_table('maitland',
+    sa.Column('id', sa.Integer(), autoincrement=True, nullable=False),
+    sa.Column('type_', sa.String(length=255), nullable=True),
+    sa.Column('app_num', sa.String(length=255), nullable=False),
+    sa.Column('lodged', sa.Integer(), nullable=True),
+    sa.Column('work_value', sa.String(length=255), nullable=True),
+    sa.Column('officer', sa.String(length=255), nullable=True),
+    sa.Column('status_', sa.String(length=255), nullable=True),
+    sa.Column('property_', sa.Text(), nullable=True),
+    sa.Column('title', sa.String(length=255), nullable=True),
+    sa.Column('applicant', sa.Text(), nullable=True),
+    sa.Column('pca', sa.Text(), nullable=True),
+    sa.Column('details', sa.Text(), nullable=True),
+    sa.Column('determination', sa.String(length=255), nullable=True),
+    sa.Column('determined', sa.Integer(), nullable=True),
+    sa.Column('updated_on', sa.Integer(), nullable=True),
+    sa.Column('notification_from', sa.Integer(), nullable=True),
+    sa.Column('notification_to', sa.Integer(), nullable=True),
+    sa.Column('_tid', sa.String(length=255), nullable=False),
+    sa.Column('document', sa.Text(), nullable=True),
+    sa.Column('created_at', sa.DateTime(), server_default=sa.text('now()'), nullable=True),
+    sa.Column('updated_at', sa.DateTime(), server_default=sa.text('now()'), nullable=True),
+    sa.PrimaryKeyConstraint('id'),
+    sa.UniqueConstraint('app_num')
     )
     op.create_table('mandurah',
     sa.Column('id', sa.Integer(), nullable=False),
